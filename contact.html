@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<fieldset>
+ <small>Enter message (optional) and click button "Send"</small>
+<div class="wrapper centered">
+  <article class="letter">
+    <div class="side">
+      <h1>Contact us</h1>
+
+  <form name="frmContact" method="post" action="contact.php">
+   <p>
+      <label for="message">Message</label>
+      <textarea name="message" id="message"></textarea>
+    </p></div>
+    <div class="side">
+     
+    <p>
+      <label for="name">Name </label>
+      <input type="text" name="name" id="name">
+    </p>
+    <p>
+      <label for="email">Email</label>
+      <input type="text" name="email" id="email">
+    </p>
+   
+   
+    <p>&nbsp;</p>
+    <p>
+    <button id="sendLetter" type="submit" value="Submit">Send</button>
+         </p>
+     </div>
+  </article>
+  <div class="envelope front"></div>
+  <div class="envelope back"></div>
+</div>
+
+  </form>
+</fieldset>
+<p class="result-message centered">Thank you for your message</p>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
